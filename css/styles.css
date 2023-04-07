@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*ESTILOS GENERALES*/
+a{
+    text-decoration: none;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+   }
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: brown;
+}
+h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: blue;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div.container{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 24;
+    grid-template-columns: 12;
+    gap: 24px;
+    background-color: antiquewhite;
+}
+
+
+.header{
+    grid-column:1/12;
+    grid-row: 1/3;
+    display: grid;
+    justify-content: center;
+    background-image:url("../imgs/fondo-header.jpg");
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+}
+
+.header .nombre-sitio{
+    text-shadow: 6px 3px 7px blue;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1em;
+    font-size: 10em;
+    color: white;
+    font-weight: bold;
+}
+
+.slogan{
+    margin-top: 40px;
+    color: rgb(252, 235, 235);
+    text-shadow: 6px 3px 7px orange;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+/*Menu de navegacion*/
+.fixed{
+    position: fixed;
+    width: 96.5%;
+    margin-left: 25px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+.barra-navegacion{
+    background-color: green;
+    height: 60px;
+    border: 3px solid gray;
+    grid-column: 2/11;
+    grid-row: 3/5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo{
+    flex-grow: 2;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.menu{
+    flex-grow: 3;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul{
+    margin: 0 auto;
+    display: block;
+}
+
+.menu ul a{
+    float: left;
+    font-size: 1.2em;
+    padding: 10px;
+    margin-left: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+
+.menu ul a:first-child{
+    margin-left: 100px;
+}
+
+.menu ul a:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: white;
+    color: green;
+}
+/*menu movil*/
+.menu-movil{
+    width: 60px;
+    display: none;
+    float: right;
+    text-align: right;
+    margin-top: 8px;
+  }
+  .menu-movil:hover{
+    cursor:pointer;
+  }
+  .menu-movil span{
+    height: 8px;
+    margin-bottom: 6px;
+    background-color: white;
+    display:block;
+  }
+ 
+ 
+
+/*CONTENIDO PRINCIPAL*/
+.main{
+    grid-row: 5/22;
+    grid-column:  2/11;
+    background-color: whitesmoke;
+    width: 100%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.contenido{
+    background-color: white;
+    margin-top: 20px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.seccion{
+    padding: 30px;
+}
+
+/*Main*/
+.taco-main{
+    display: block;
+    
+}
+.taco-main .decripcion{
+    float: left;
+    width: 40%;
+    
+}
+
+.taco-main .decripcion p{
+    padding: 5px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-align: justify;
+}
+.taco-main .imagen{
+    float: right;
+   width: 50%;
+}
+.taco-main .imagen img{
+    width: 95%;
+    height: 400px;
+    
+}
+/*Menu tacos*/
+.menu-tacos{
+    text-align: center;
+    display: block;
+}
+
+.menu-tacos li{
+    list-style: none;
+    float: left;
+    width: 23%;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+.taco{
+    position: relative;
+    overflow: hidden;
+}
+
+.taco img{
+    max-width: 100%;
+    filter: grayscale(1);
+    transition: all 300ms ease-in-out;
+}
+
+ .taco p{
+    width: 100%;
+    margin-bottom: 10px;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 15px 1px;
+    background-color: rgba(0, 0, 0, 0.55);
+    text-align: left;
+    color: #fe4918;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+}
+
+.taco:hover p{
+    background-color: green;
+    color: white;
+}
+
+.menu-tacos .taco:hover img{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.cboxElement{
+    text-align: center;
+   }
+.cboxElement img{
+    width: 300px;
+    height: 200px;
+}
+/*Clientes*/
+.clientes{
+    text-align: center;
+    display: block;
+    
+}
+
+.lista-clientes{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+}
+.cliente{
+    border: 1px solid rgba(102, 97, 97,0.3);
+    margin-top: 15px;
+    height: 200px;
+    margin: 10px 10px;
+    display: block;
+}
+
+.cliente p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1em;
+    color: black;
+    margin:30px 25px  ;
+    text-align: justify;
+}
+.info-cliente{
+    text-align: center;
+    color: blue;
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+
+
+/*Mapa*/
+.mapa{
+    width: 100%;
+    height: 420px;
+    text-align: center;
+}
+.location{
+    background-color: green;
+    width: 100%;
+    height: 390px;
+    margin-bottom: 10px;
+}
+
+/*Horarios*/
+.horarios{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.horario-contacto{
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: repeat(3,33%);
+}
+
+
+.horario p{
+    margin: 20px 5px;
+    font-size: 1.5em;
+}
+
+
+ .resaltado::after{
+    content: "";
+    margin: 0 auto;
+    background-color: #fe4918;
+    margin-top: 5px;
+    height: 5px;
+    width: 100px;
+    display: block
+ }
+.img-slogan img{
+    width: 100%;
+    height: 200px;
+}
+
+.img-slogan p{
+    background-color:skyblue;
+    font-size: 20px;
+    color: rgb(252, 235, 235);
+    text-shadow: 6px 3px 7px orange;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/*Contactos*/
+.contactos{
+   display: inline-block;
+}
+
+.phone-call{
+    margin-top: 50px;
+}
+.phone-call i{
+   
+    font-size: 3em;
+    margin: 0 auto;
+    color: #fe4918;
+}
+.phone-call a{
+   
+    color: #fe4918;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+
+/*Footer*/
+.footer{
+    text-align: center;
+    grid-row: 22/24;
+    grid-column:1/12;
+}
+
+.footer p{
+    background-color: #fe4918;
+    font-size: 2.1em;
+    color: aliceblue;
+}
+
+
+
+/*FORMULARIO DE CONTACTOS*/
+
+.mensaje{
+    margin: 0 auto;
+    background-color: rgb(30, 177, 30);
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 30%;
+    border: 2px solid yellow;
+}
+
+.mensaje p{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+.mensaje .phone-call{
+    text-align: center;
+    margin: 0 auto;
+}
+.formulario-contacto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    border: 5px solid green;
+    border-radius: 3px;
+    padding: 20px;
+    display: flex;
+    width:500px;
+    height: auto;
+    flex-direction: column;
+}
+
+.formulario label{
+    width: 100%;
+    font-size: 1.1em;
+    color: brown;
+    margin: 10px 5px;
+
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"],
+.formulario input[type="email"],
+.formulario select{
+    height: 30px;
+    margin: 10px,5px;
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.formulario textarea{
+    min-height: 80px;
+    max-height: 100px;
+    text-align: center;
+    margin: 10px 5px;
+    border: 2px solid gray;
+}
+
+.formulario input[type="submit"]{
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: green;
+    color: white;
+    width: 80px;
+    height: 50px;
+}
+
+.formulario input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+#error{
+    display: none;
+    background-color: red;
+    margin: 0 auto;
+    color: white;
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*SOBRE NOSOTROS*/
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    text-align: justify;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.about img{
+    width: 80%;
+    height: 600px;
+}

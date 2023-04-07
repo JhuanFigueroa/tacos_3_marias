@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tacos de perro</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/colorbox.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/styles.css"
+    />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <div class="container">
+    <body>
+      <header class="header">
+        <div class="titulo-pagina">
+          <h1 class="nombre-sitio">Tacos de perro</h1>
+          <p class="slogan">Te atendemos bien</p>
+        </div>
+      </header>
+      <!--Fin Header-->
+
+      <div class="barra-navegacion">
+        <div class="logo">
+          <a href="index.html">
+            <h3>Tacos de perro</h3>
+          </a>
+        </div>
+        <div class="menu-movil">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="menu">
+          <ul>
+            <a href="about.html">Sobre nosotros</a>
+            <a href="index.html #menu">Menu</a>
+            <a href="#mapa">¿Donde nos encontramos?</a>
+            <a href="#horarios">Horarios</a>
+            <a href="#">Contacto y pedidios</a>
+          </ul>
+        </nav>
+      </div>
+      <!--Fin barra navegacion-->
+
+      <div class="main">
+        <div class="contenido seccion">
+
+          <div class="mensaje">
+            <h2>Aviso</h2>
+            <p>Si tu pedido es de mas de 20 tacos, pontente en contacto directo con nosotros!</p>
+            <div class="phone-call">
+              <i class="fas fa-phone-volume"></i>
+              <a href="call:to 77315988845">77315988845</a>
+            </div>
+          </div> 
+            <h2>Contacto</h2>
+            <div id="error"></div>
+           <div class="formulario-contacto">
+            <form action="" method="post" class="formulario">
+              <label for="nombre">Nombre:</label>
+              <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre">
+
+              <label for="mail">Email:</label>
+              <input type="email" name="mail" id="mail" placeholder="Introduce tu email">
+
+              <label for="telefono">Telefono:</label>
+              <input type="text" name="telefono" id="telefono" placeholder="Introduce tu telefono">
+
+              <label for="localidad">Localidad:</label>
+              <select name="pueblo" id="pueblo">
+                  <option value="">--Selecciona tu localidad--</option>
+                  <option value="CA">La Cañada</option>
+                  <option value="STAMA">Sta. Maria Magdalena</option>
+                  <option value="TL">Tlautla</option>
+              </select>
+
+              <label for="numero">Num de Tacos:</label>
+              <input type="number" name="numero" id="numero" placeholder="Introduce la canidad a ordenar">
+
+              <label for="comentarios">Comentarios:</label>
+             <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="cometarios adicionales"></textarea>
+
+             <input type="submit" id="btnEnviar" value="Enviar">
+
+          </form>
+           </div>
+           
+        </div>
+      </div>
+    </body>
+    <footer class="footer">
+      <p>Tacos 3 Marias &copy; todos los derechos reservados</p>
+      <script src="js/jquery-1.12.0.min.js"></script>
+      
+      <script src="js/jquery.colorbox.js"></script>
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      <script src="js/main.js"></script>
+    
+    </footer>
+  </div>
+</html>

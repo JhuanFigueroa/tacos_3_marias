@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tacos 3 Marias</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/colorbox.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/styles.css"
+    />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <div class="container">
+    <body>
+      <header class="header">
+        <div class="titulo-pagina">
+          <h1 class="nombre-sitio">Tacos 3 Marias</h1>
+          <p class="slogan">Te atendemos bien</p>
+        </div>
+      </header>
+      <!--Fin Header-->
+
+      <div class="barra-navegacion">
+        <div class="logo">
+          <a href="index.html">
+            <h3>Tacos 3 Marias</h3>
+          </a>
+        </div>
+        <div class="menu-movil">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="menu">
+          <ul>
+            <a href="about.html">Sobre nosotros</a>
+            <a href="#menu" class="link">Menu</a>
+            <a href="#mapa" class="link">¿Donde nos encontramos?</a>
+            <a href="#horarios" class="link">Horarios</a>
+            <a href="contacto.html">Contacto y pedidios</a>
+          </ul>
+        </nav>
+      </div>
+      <!--Fin barra navegacion-->
+
+      <div class="main">
+        <section class="contenido seccion taco-main">
+          <h2>El Taco</h2>
+          <div class="decripcion">
+            <p>
+              Entre las distintas variedades de tacos, ya sean de carnitas,
+              guisado, canasta, barbacoa, etcétera. Hay una que quizás sea la
+              más famosa de las últimas décadas, la más consumida, y en la que
+              combinan culturas alimenticias disímbolas : los tacos al carbón un
+              producto mexicano que ha sabido fusionar distintas gastronomías
+              para crear un estilo de comida rápida nacional y de indudable
+              éxito.
+            </p>
+            <p>
+              Aparecieron en México durante los años sesenta, y el hecho de que
+              sus principales ingredientes sean carnes asadas revela su origen
+              norteño. La economía, calidad, sabor del platillo y el auge de la
+              comida rápida (fast food) en el estilo de vida de los mexicanos,
+              hicieron que los establecimientos dedicados a este negocio
+              tuvieran un éxito sobresaliente.
+            </p>
+          </div>
+
+          <div class="imagen">
+            <img
+              src="imgs/krisztian-tabori-ZQf4jzkpz1k-unsplash.jpg"
+              alt="img-taco"
+            />
+          </div>
+        </section>
+        <!--Fin seccion tacos-->
+        <div id="menu"></div>
+        <section class="contenido seccion menu-tacos">
+          <h2>Nusetro menu</h2>
+          <ul class="lista-tacos">
+            <li>
+              <div class="taco">
+                <a
+                    href="#taco01"
+                    class="taco-info"
+                  >
+                    <img
+                      src="imgs/tai-s-captures-JiRSy0GfqPA-unsplash.jpg"
+                      alt="taco-bisteck"
+                    />
+                    <p>Bisteck</p>
+                </a>
+              </div>
+            </li>
+              <div style="display:none;">
+                <div class="taco-info" id="taco01">
+                  <h2>Taco de Bistec</h2>
+                  <img src="imgs/tai-s-captures-JiRSy0GfqPA-unsplash.jpg" alt="bistek">
+                  <p>Taco de bistek normal</p>
+                </div>
+              </div>
+            
+
+              <li>
+                <div class="taco">
+                  <a
+                      href="#taco02"
+                      class="taco-info"
+                    >
+                      <img
+                        src="imgs/tai-s-captures-JiRSy0GfqPA-unsplash.jpg"
+                        alt="taco-bisteck"
+                      />
+                      <p>Bisteck Enchilado</p>
+                  </a>
+                </div>
+              </li>
+                <div style="display:none;">
+                  <div class="taco-info" id="taco02">
+                    <h2>Taco de Bistec Enchilado</h2>
+                    <img src="imgs/tai-s-captures-JiRSy0GfqPA-unsplash.jpg" alt="bistek">
+                    <p>Taco de bistek enchilado</p>
+                  </div>
+                </div>
+
+                <li>
+                  <div class="taco">
+                    <a
+                        href="#taco03"
+                        class="taco-info"
+                      >
+                        <img
+                          src="imgs/tai-s-captures-JiRSy0GfqPA-unsplash.jpg"
+                          alt="taco-bisteck"
+                        />
+                        <p>Longaniza</p>
+                    </a>
+                  </div>
+                </li>
+                  <div style="display:none;">
+                    <div class="taco-info" id="taco03">
+                      <h2>Taco de Longaniza</h2>
+                      <img src="imgs/tai-s-captures-JiRSy0GfqPA-unsplash.jpg" alt="bistek">
+                      <p>Taco de longaniza </p>
+                    </div>
+                  </div>
+
+                  <li>
+                    <div class="taco">
+                      <a
+                          href="#taco04"
+                          class="taco-info"
+                        >
+                          <img
+                            src="imgs/tai-s-captures-JiRSy0GfqPA-unsplash.jpg"
+                            alt="taco-bisteck"
+                          />
+                          <p>Campechano</p>
+                      </a>
+                    </div>
+                  </li>
+                    <div style="display:none;">
+                      <div class="taco-info" id="taco04">
+                        <h2>Taco Campechano</h2>
+                        <img src="imgs/tai-s-captures-JiRSy0GfqPA-unsplash.jpg" alt="bistek">
+                        <p>Taco campechano, combinacion de bistek, bistek enchilado y longaniza</p>
+                      </div>
+                    </div>
+            
+          </ul>
+        </section>
+        <!--Fin menu-tacos-->
+
+        <section class="contenido seccion clientes">
+          <h2>Clientes</h2>
+          <div class="lista-clientes">
+            <div class="cliente">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s
+              </p>
+              <footer class="info-cliente">
+                <cite class="resaltado">Jose Martinez</cite>
+              </footer>
+            </div>
+
+            <div class="cliente">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s
+              </p>
+              <footer class="info-cliente">
+                <cite class="resaltado">Luis perez</cite>
+              </footer>
+            </div>
+
+            <div class="cliente">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s
+              </p>
+              <footer class="info-cliente">
+                <cite class="resaltado">Ocatavio Ramirez</cite>
+              </footer>
+            </div>
+          </div>
+          
+        </section>
+        <!--Fin clientes-->
+        <div class="contenido seccion ">
+          <h2>Donde estamos</h2>
+          <div class="mapa" id="mapa"></div>
+        </div>
+        <!--Fin mapa -->
+
+        <section id="horarios" class="contenido seccion horarios">
+          <h2>Horarios y contacto</h2>
+          <div class="horario-contacto">
+            <div class="horario">
+              <h3>Horarios</h3>
+              <p>Viernes y sabados</p>
+              <p>De 18:000 -22:00 hrs</p>
+              <p class="resaltado">¡Visitanos!</p>
+            </div>
+
+            <div class="img-slogan">
+              <img src="imgs/LogoPNG.PNG" alt="img logo" />
+              <p>Los mejores tacos de la region</p>
+            </div>
+
+            <div class="contactos">
+              <h3>Contacto</h3>
+              <div class="phone-call">
+                <i class="fas fa-phone-volume"></i>
+                <a href="call:to 77315988845">77315988845</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Fin horarios-->
+      </div>
+    </body>
+    <footer class="footer">
+      <p>Tacos 3 Marias &copy; todos los derechos reservados</p>
+      <script src="js/jquery-1.12.0.min.js"></script>
+      
+      <script src="js/jquery.colorbox.js"></script>
+      <script src="js/mapa.js"></script>
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      <script src="js/main.js"></script>
+    
+    </footer>
+  </div>
+</html>
